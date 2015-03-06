@@ -37,8 +37,8 @@ public class ChanceTest {
 
     @Test
     public void notShouldReturnComplementOfProbability() {
-        Chance coinToss = new Chance(0.5);
-        assertEquals(new Chance(0.5), coinToss.not());
+        Chance coinToss = new Chance(0.6);
+        assertEquals(new Chance(0.4), coinToss.not());
         assertEquals(new Chance(0), new Chance(1).not());
     }
 
